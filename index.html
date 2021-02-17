@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <h2 class="text-center text-white bg-primary py-4">Shopping Expenses</h2>
+        <div class="input-group my-4" style="max-width: 600px; margin: 0 auto;">
+            <input type="text" aria-label="product" id="textInput" class="form-control" placeholder="Product">
+            <input type="number" aria-label="price" id="priceInput" class="form-control" placeholder="Price">
+            <button id="addBtn" class="input-group-text bg-success text-white">Add to list</button>
+            <button id="clearBtn" class="input-group-text bg-danger text-white">Clear list</button>
+        </div>
+        <table class="table table-striped table-hover" style="max-width: 600px; margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody id="container">
+
+            </tbody>
+            <tfoot>
+                <th scope="row">Total price:</th>
+                <td colspan="3" id="totalPrice" class="text-end fw-bold text-success">0</td>
+            </tfoot>
+        </table>
+    </main>
+
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
